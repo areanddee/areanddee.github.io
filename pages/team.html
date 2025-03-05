@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - EarthWorks</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <!-- Hero Section with Background Image -->
+    <div class="hero-section">
+        <!-- Left logo on white background -->
+        <div class="hero-logo-left">
+            <img src="../images/logos/earthworks-logo.png" alt="EarthWorks Logo" width="120" height="120">
+        </div>
+    
+        <!-- Center image container -->
+        <div class="hero-background-container">
+            <img src="../images/backgrounds/team-banner.jpg" alt="Team Banner" class="hero-background">
+            <h1 class="hero-title">Our Team</h1>
+        
+            <!-- Search container inside image area -->
+            <div class="search-container">
+                <input type="text" id="siteSearch" class="search-input" placeholder="Search...">
+                <button onclick="searchSite()" class="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Right side - NSF logo only -->
+        <div class="nsf-container">
+            <img src="../images/logos/nsf-logo.png" alt="NSF Logo" class="nsf-logo">
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-link">About EarthWorks</a>
+            <a href="team.html" class="nav-link active">Our Team</a>
+            <a href="faqs.html" class="nav-link">FAQs</a>
+            <a href="code.html" class="nav-link">Code and Data</a>
+            <a href="papers.html" class="nav-link">Papers & Presentations</a>
+            <a href="related.html" class="nav-link">Related Efforts</a>
+            <a href="education.html" class="nav-link">Education</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <h2 class="section-title">Our Team</h2>
+
+            <!-- Organization tabs -->
+            <div class="org-tabs">
+                <button class="org-tab active" onclick="showOrg('csu')">Colorado State University</button>
+                <button class="org-tab" onclick="showOrg('ncar')">NSF NCAR</button>
+                <button class="org-tab" onclick="showOrg('partners')">Other Partners</button>
+            </div>
+
+            <!-- CSU Section -->
+            <div id="csu" class="org-section active">
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="../images/team/David_Randall_2022.jpg" alt="David A. Randall" class="member-photo">
+                        <h4>David A. Randall</h4>
+                        <p>University Distinguished Professor</p>
+                        <p>Department of Atmospheric Science</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/Hurrell.jpg" alt="James W. Hurrell" class="member-photo">
+                        <h4>James W. Hurrell</h4>
+                        <p>Professor and Scott Presidential Chair in Environmental Science and Engineering</p>
+                        <p>Department of Atmospheric Science</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/DonDazlich.jpg" alt="Don Dazlich" class="member-photo">
+                        <h4>Don Dazlich</h4>
+                        <p>Senior Research Associate</p>
+                        <p>Department of Atmospheric Science</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/LantaoSun.jpg" alt="Lantao Sun" class="member-photo">
+                        <h4>Lantao Sun</h4>
+                        <p>Research Scientist</p>
+                        <p>Department of Atmospheric Science</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NCAR Section -->
+            <div id="ncar" class="org-section">
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="../images/team/Voelz.jpg" alt="Sheri Voelz" class="member-photo">
+                        <h4>Sheri Voelz IV</h4>
+                        <p>Software Engineer/Manager</p>
+                        <p>Computational and Information Systems</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/Medeiros.jpg" alt="Brian Medeiros" class="member-photo">
+                        <h4>Brian Medeiros</h4>
+                        <p>Project Scientist III</p>
+                        <p>Climate and Global Dynamics</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/XYHuang.jpg" alt="XinYing Huang" class="member-photo">
+                        <h4>Xingying Huang</h4>
+                        <p>Post Doc</p>
+                        <p>Climate and Global Dynamics</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/Skamarock.jpg" alt="William Skamarock" class="member-photo">
+                        <h4>William Skamarock</h4>
+                        <p>Senior Scientist</p>
+                        <p>Mesoscale & Microscale Meteorology</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/JianSun.jpg" alt="Jian Sun" class="member-photo">
+                        <h4>Jian Sun</h4>
+                        <p>Software Engineer</p>
+                        <p>Computational and Information Systems</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/Dylan_Dickerson.jpg" alt="G. Dylan Dickerson" class="member-photo">
+                        <h4>G. Dylan Dickerson</h4>
+                        <p>Software Engineer</p>
+                        <p>Mesoscale & Microscale Meteorology</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partners Section -->
+            <div id="partners" class="org-section">
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="../images/team/Loft.jpg" alt="Richard D. Loft" class="member-photo">
+                        <h4>Richard D. Loft</h4>
+                        <p>HPC Consultant</p>
+                        <p>AreandDee LLC</p>
+                        <p>Sole Proprietor</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/AndrewGettelman.jpg" alt="Andrew Gettelman" class="member-photo">
+                        <h4>Andrew Gettelman</h4>
+                        <p>Earth Scientist</p>
+                        <p>Pacific Northwest National Laboratory</p>
+                        <p>Department of Energy</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/Huebler.jpg" alt="Gunther Huebler" class="member-photo">
+                        <h4>Gunther Huebler</h4>
+                        <p>Graduate Research Assistant</p>
+                        <p>Department of Mathematical Sciences</p>
+                        <p>University of Wisconsin Milwaukee</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/PranayReddyKommera.jpg" alt="Pranay Kommera" class="member-photo">
+                        <h4>Pranay Reddy Kommera</h4>
+                        <p>Senior Developer Technology Engineer, Public Sector</p>
+                        <p>HPC Support Group</p>
+                        <p>NVIDIA Corporation</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/male_silhouette.jpg" alt="Raghu Kumar" class="member-photo">
+                        <h4>Raghu Raj Prasanna Kumar</h4>
+                        <p>Manager</p>
+                        <p>HPC Support Group</p>
+                        <p>NVIDIA Corporation</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../images/team/Carl_Ponder.jpg" alt="Carl Ponder" class="member-photo">
+                        <h4>Carl Ponder</h4>
+                        <p>Senior Developer Technology Engineer</p>
+                        <p>HPC Support Group</p>
+                        <p>NVIDIA Corporation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="contact-section">
+                    <h3>Contact</h3>
+                    <p><a href="mailto:david.randall@colostate.edu">Colorado State University</a></p>
+                    <p><a href="mailto:svoelz@ucar.edu">National Center for Atmospheric Research</a></p>
+                </div>
+                <div class="funding-section">
+                    <h3>Funding</h3>
+                    <p>Supported by the National Science Foundation</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Full-width white strip for logos -->
+        <div class="logo-strip-container">
+            <div class="logo-strip">
+                <img src="../images/logos/csu-logo.png" alt="CSU Logo" height="64" width="auto">
+                <img src="../images/logos/ncar-logo.png" alt="NCAR Logo" height="64" width="auto">
+                <img src="../images/logos/nsf-logo.png" alt="NSF Logo" height="64" width="auto">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function searchSite() {
+        const searchTerm = document.getElementById('siteSearch').value;
+        console.log('Searching for:', searchTerm);
+    }
+
+    function showOrg(orgId) {
+        // Hide all sections
+        document.querySelectorAll('.org-section').forEach(section => {
+            section.classList.remove('active');
+        });
+
+        // Show selected section
+        document.getElementById(orgId).classList.add('active');
+
+        // Update tab styling
+        document.querySelectorAll('.org-tab').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        event.target.classList.add('active');
+    }
+    </script>
+
+    <script src="/scripts/search.js"></script>
+    <script src="/scripts/team.js"></script>
+</body>
+</html>

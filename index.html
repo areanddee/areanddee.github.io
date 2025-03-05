@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthWorks</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Hero Section with Background Image -->
+    <div class="hero-section">
+        <!-- Left logo on white background -->
+        <div class="hero-logo-left">
+            <img src="images/logos/earthworks-logo.png" alt="EarthWorks Logo" width="120" height="120">
+        </div>
+    
+        <!-- Center image container -->
+        <div class="hero-background-container">
+            <img src="images/backgrounds/main-earth.jpg" alt="Earth from Space" class="hero-background">
+            <h1 class="hero-title">EarthWorks</h1>
+        
+            <!-- Search container inside image area -->
+            <div class="search-container">
+                <input type="text" id="siteSearch" class="search-input" placeholder="Search...">
+                <button onclick="searchSite()" class="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Right side - NSF logo only -->
+        <div class="nsf-container">
+            <img src="images/logos/nsf-logo.png" alt="NSF Logo" class="nsf-logo">
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link active">About EarthWorks</a>
+            <a href="pages/team.html" class="nav-link">Our Team</a>
+            <a href="pages/faqs.html" class="nav-link">FAQs</a>
+            <a href="pages/code.html" class="nav-link">Code and Data</a>
+            <a href="pages/papers.html" class="nav-link">Papers & Presentations</a>
+            <a href="pages/related.html" class="nav-link">Related Efforts</a>
+            <a href="pages/education.html" class="nav-link">Education</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <h2 class="section-title">Vision</h2>
+            <p class="mission-text">
+                EarthWorks is a community-based weather and climate simulation project
+                utilizing a global storm-resolving model. Our mission is to advance
+                atmospheric research through collaborative modeling efforts.
+            </p>
+
+            <div class="focus-areas">
+                <div class="focus-item">
+                    <img src="images/thumbnails/research.jpg" alt="Research" class="focus-thumbnail">
+                    <div class="focus-content">
+                        <h3>Fostering research at the nexus of weather and climate.</h3>
+                        <p>Many outstanding scientific issues about the connection between weather and climate stem from the representation of storm resolving scales in earth system models. For this reason,  EarthWorks is focused on creating a modelling configuration capable of supporting research in this area.</p>
+                        <a href="pages/focus-area-template.html" class="focus-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="focus-item">
+                    <img src="images/thumbnails/better-models.jpg" alt="Better Models" class="focus-thumbnail">
+                    <div class="focus-content">
+                        <h3>Providing Earth system model parameterizations that work at kilometer scales.</h3>
+                        <p>For example, EarthWorks has tuned CAM physics packages to work better at storm-resolving scale. EarthWorks also places all components on the same grid to help simplify the underlying assumptions of these parameterizations.</p>
+                        <a href="pages/focus-area-template.html" class="focus-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="focus-item">
+                    <img src="images/thumbnails/digital-earth.jpg" alt="Faster Models" class="focus-thumbnail">
+                    <div class="focus-content">
+                        <h3>Exploiting emerging hardware, software tools, and modelling technologies.</h3>
+                        <p>EarthWorks aims to dramatically accelerate Earth system modeling at high resolutions by migrating MPAS-CAM and MPAS-Ocean components to GPUs, exploring AI inference, and adopting data analysis tools like Raijin and HEALPix.</p>
+                        <a href="pages/focus-area-template.html" class="focus-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="focus-item">
+                    <img src="images/thumbnails/mentorship.jpg" alt="Education" class="focus-thumbnail">
+                    <div class="focus-content">
+                        <h3>EarthWorks is educating the next generation of earth system researchers.</h3>
+                        <p>EarthWorks provides support for graduate students and post docs working in one of the other three focus areas.</p>
+                        <a href="pages/focus-area-template.html" class="focus-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="contact-section">
+                    <h3>Contact</h3>
+                    <p><a href="mailto:david.randall@colostate.edu">Colorado State University</a></p>
+                    <p><a href="mailto:dlawren@ucar.edu">National Center for Atmospheric Research</a></p>
+                </div>
+                <div class="funding-section">
+                    <h3>Funding</h3>
+                    <p>Supported by the National Science Foundation</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Full-width white strip for logos -->
+        <div class="logo-strip-container">
+            <div class="logo-strip">
+                <img src="images/logos/csu-logo.png" alt="CSU Logo" height="64" width="auto">
+                <img src="images/logos/ncar-logo.png" alt="NCAR Logo" height="64" width="auto">
+                <img src="images/logos/nsf-logo.png" alt="NSF Logo" height="64" width="auto">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function searchSite() {
+        const searchTerm = document.getElementById('siteSearch').value;
+        console.log('Searching for:', searchTerm);
+    }
+    </script>
+
+    <script src="/scripts/search.js"></script>
+</body>
+</html>
