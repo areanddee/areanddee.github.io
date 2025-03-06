@@ -18,7 +18,6 @@
             <form 
                 action="https://formspree.io/f/mldjrbwy" 
                 method="POST" 
-                enctype="multipart/form-data"
                 class="contact-form"
             >
                 <div class="form-group">
@@ -44,12 +43,14 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="message">Cover Letter and Experience *</label>
-                    <textarea id="message" name="message" rows="5" required 
-                        placeholder="Please include your relevant experience. After submitting this form, please email your resume to careers@areanddee.com"></textarea>
+                    <label for="linkedin">LinkedIn or GitHub Profile URL *</label>
+                    <input type="url" id="linkedin" name="linkedin" placeholder="https://www.linkedin.com/in/your-profile" required>
                 </div>
                 
-                <p class="form-note">Note: After submitting this form, please send your resume to careers@areanddee.com with the subject line "Resume for [Position Name]"</p>
+                <div class="form-group">
+                    <label for="cover_letter">Cover Letter *</label>
+                    <textarea id="cover_letter" name="cover_letter" rows="5" required></textarea>
+                </div>
                 
                 <button type="submit" class="submit-button">Submit Application</button>
             </form>
