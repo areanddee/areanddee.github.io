@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - AreandDee LLC</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="../styles/main.css" as="style">
+    <link rel="preload" href="../scripts/careers.js" as="script">
+</head>
+<body>
+    <!-- ... header and nav sections ... -->
+    
+    <main class="main-content">
+        <div class="content-container">
+            <h2 class="section-title">Join Our Team</h2>
+            
+            <form 
+                action="https://formspree.io/f/xrgkpzle" 
+                method="POST" 
+                enctype="multipart/form-data"
+                class="contact-form"
+            >
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="position">Position of Interest *</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select a position...</option>
+                        <option value="vp-admin">VP of Administration</option>
+                        <option value="chief-esai">Chief ES-AI Scientist</option>
+                        <option value="esai-scientist">ES-AI Scientist</option>
+                        <option value="data-engineer">ES-AI Data Engineer</option>
+                        <option value="hpc-engineer">HPC Software Engineer</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resume">Resume/CV *</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Cover Letter</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Submit Application</button>
+            </form>
+        </div>
+    </main>
+    
+    <!-- ... footer section ... -->
+    <script src="../scripts/careers.js"></script>
+</body>
+</html> 

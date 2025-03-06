@@ -475,3 +475,120 @@ body {
         margin-right: 0;
     }
 }
+
+/* Base responsive layout */
+.content-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Team grid responsiveness */
+@media screen and (max-width: 1200px) {
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-member {
+        max-width: 100%;
+    }
+}
+
+/* Form responsiveness */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+    }
+    
+    .submit-button {
+        width: 100%;
+    }
+}
+
+/* Hero section responsiveness */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .hero-logo-left, .nsf-container {
+        padding: 10px;
+    }
+    
+    .hero-title {
+        font-size: 24px;
+    }
+    
+    .search-container {
+        width: 90%;
+    }
+}
+
+/* Footer responsiveness */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-strip {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logo-strip img {
+        height: 48px;
+        margin: 10px;
+    }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) {
+    .nav-link, .submit-button {
+        padding: 12px 20px; /* Larger touch targets */
+    }
+    
+    select, input[type="file"] {
+        padding: 12px;
+    }
+}
