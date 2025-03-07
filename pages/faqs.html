@@ -54,7 +54,102 @@
     <main class="main-content">
         <div class="content-container">
             <h2 class="section-title">Frequently Asked Questions</h2>
-            <p>FAQs content goes here...</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is AreandDee LLC?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        AreandDee LLC combines world-class meteorological and earth system expertise, HPC capabilities, and data science to supercharge AI-driven Earth System (ES-AI) solutions for organizations.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What services do you offer?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        We offer ES-AI consulting, model development, training, and implementation services. Our expertise includes high-performance computing, earth system modeling, and AI/ML integration.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How can I work with AreandDee?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        You can work with us either as a client or join our team. For client inquiries, contact us at info@areanddee.com. For career opportunities, visit our careers page.
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .faq-container {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+
+                .faq-item {
+                    margin-bottom: 20px;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    overflow: hidden;
+                }
+
+                .faq-question {
+                    width: 100%;
+                    padding: 20px;
+                    background: #f8f9fa;
+                    border: none;
+                    text-align: left;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .faq-question:hover {
+                    background: #e9ecef;
+                }
+
+                .faq-icon {
+                    font-size: 1.5em;
+                    transition: transform 0.3s ease;
+                }
+
+                .faq-answer {
+                    padding: 0;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: all 0.3s ease;
+                    background: white;
+                }
+
+                .faq-item.active .faq-answer {
+                    padding: 20px;
+                    max-height: 500px;
+                }
+
+                .faq-item.active .faq-icon {
+                    transform: rotate(45deg);
+                }
+            </style>
+
+            <script>
+                document.querySelectorAll('.faq-question').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const faqItem = button.parentElement;
+                        faqItem.classList.toggle('active');
+                    });
+                });
+            </script>
         </div>
     </main>
 
