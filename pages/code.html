@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code and Data - EarthWorks</title>
+    <title>Code and Data - AreandDee LLC</title>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
     
         <!-- Center image container -->
         <div class="hero-background-container">
-            <img src="../images/backgrounds/code-banner.jpg" alt="Code Banner" class="hero-background">
+            <img src="../images/backgrounds/cyber-being2.jpg" alt="Code Banner" class="hero-background">
             <h1 class="hero-title">Code and Data</h1>
         
             <!-- Search container inside image area -->
@@ -40,41 +40,45 @@
     <!-- Navigation -->
     <nav class="main-nav">
         <div class="nav-container">
-            <a href="../index.html" class="nav-link">About AreandDee LLC</a>
+            <a href="../index.html" class="nav-link">Home</a>
             <a href="team.html" class="nav-link">Our Team</a>
             <a href="faqs.html" class="nav-link">FAQs</a>
             <a href="code.html" class="nav-link active">Code and Data</a>
             <a href="papers.html" class="nav-link">Case Studies</a>
             <a href="related.html" class="nav-link">Tools</a>
-            <a href="education.html" class="nav-link">Education</a>
+            <a href="education.html" class="nav-link">Training</a>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main class="main-content">
         <div class="content-container">
-            <h2 class="section-title">Code and Data</h2>
+            <h2 class="section-title">Code and Data Resources</h2>
+            
+            <div class="code-container">
+                <section class="code-section">
+                    <h3>GitHub Repositories</h3>
+                    <div class="repo-list">
+                        <div class="repo-item">
+                            <h4>CAM-FP32</h4>
+                            <p>Community Atmosphere Model with FP32 Precision Support</p>
+                            <a href="https://github.com/NCAR/CAM-FP32" class="repo-link" target="_blank">View Repository</a>
+                        </div>
+                        <!-- Add more repositories as needed -->
+                    </div>
+                </section>
 
-            <div class="repository-section">
-                <h3 class="subsection-title">Code Repositories</h3>
-                <ul class="repository-list">
-                    <li>
-                        <strong>EarthWorks Git Repository:</strong>
-                        <a href="https://github.com/EarthWorksOrg" class="repo-link" target="_blank">Main EarthWorksOrg on GitHub</a>
-                        <p class="repo-description">Primary repository for EarthWorks model development and community contributions.</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="repository-section">
-                <h3 class="subsection-title">Datasets</h3>
-                <ul class="repository-list">
-                    <li>
-                        <strong>EarthWorks Reference Datasets:</strong>
-                        <a href="#" class="repo-link" target="_blank">Dataset URL coming soon</a>
-                        <p class="repo-description">Collection of reference datasets used for model validation and testing.</p>
-                    </li>
-                </ul>
+                <section class="code-section">
+                    <h3>Data Sets</h3>
+                    <div class="dataset-list">
+                        <div class="dataset-item">
+                            <h4>Training Data</h4>
+                            <p>Curated datasets for Earth System AI model training</p>
+                            <a href="#" class="dataset-link">Access Data</a>
+                        </div>
+                        <!-- Add more datasets as needed -->
+                    </div>
+                </section>
             </div>
         </div>
     </main>
@@ -85,24 +89,26 @@
             <div class="footer-content">
                 <div class="contact-section">
                     <h3>Contact</h3>
-                    <p>Colorado State University</p>
-                    <p>National Center for Atmospheric Research</p>
+                    <p><a href="mailto:david.randall@colostate.edu">Colorado State University</a></p>
+                    <p><a href="mailto:svoelz@ucar.edu">National Center for Atmospheric Research</a></p>
                 </div>
                 <div class="funding-section">
                     <h3>Funding</h3>
                     <p>Supported by the National Science Foundation</p>
                 </div>
             </div>
-
-            <!-- Institution Logos -->
-            <div class="institution-logos">
-                <img src="../images/logos/csu-logo.png" alt="CSU Logo" width="311" height="64">
-                <img src="../images/logos/ncar-logo.png" alt="NCAR Logo" width="100" height="64">
-                <img src="../images/logos/nsf-logo.png" alt="NSF Logo" width="64" height="64">
+        </div>
+    
+        <!-- Full-width white strip for logos -->
+        <div class="logo-strip-container">
+            <div class="logo-strip">
+                <img src="../images/logos/csu-logo.png" alt="CSU Logo" height="64" width="auto">
+                <img src="../images/logos/ncar-logo.png" alt="NCAR Logo" height="64" width="auto">
+                <img src="../images/logos/nsf-logo.png" alt="NSF Logo" height="64" width="auto">
             </div>
         </div>
     </footer>
-    
+
     <script>
     function searchSite() {
         const searchTerm = document.getElementById('siteSearch').value;
